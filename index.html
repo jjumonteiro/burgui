@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .amarela {
+            background-color: #ffd504af;
+        }
+
+        .bege {
+            background-color: #fff0a7dd;
+            padding-top: 45px;
+        }
+
+        .vermelin {
+            background-image: url(div15.png);
+            background-size: cover;
+        }
+
+        .amarelo {
+            background-color: #ffd504af;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------*/
+        .p1 {
+            height: 300PX;
+            background-image: url(picante.jpeg);
+            height: calc(100vh - 116px);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+            font-weight: lighter;
+        }
+
+        .p2 {
+            height: 180px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: right;
+        }
+
+        .p5 {
+            background-color: white;
+            height: 60px;
+        }
+
+        .p1-c {
+            background-color: #bcbcbc;
+            height: 230PX;
+
+        }
+
+        .p2-c {
+            background-color: #bcbcbc;
+            height: 180px;
+        }
+
+        /* ---------------------------------------------------------------------- */
+        .buttom {
+            background-color: #DE0A0A"
+
+        }
+
+        .linha {
+            background-color: #ffd504af;
+            height: 5px;
+            width: 50px;
+            border: none;
+        }
+
+        input.form-control,
+        textarea.form-control {
+            border-color: #000 !important;
+        }
+
+        .aa .p1-c {
+            background-image: url(img2-1.jpeg);
+            transition: all 0.3s;
+        }
+        .aa .p1-c:hover {
+            transform: scale(1.5);
+        }
+
+
+        .bb .p1-c {
+            background-image: url(img2-2.jpeg);
+            transition: all 0.3s;
+        }
+        .bb .p1-c:hover {
+            transform: scale(1.5);
+        }
+
+
+        .cc .p2-c {
+            background-image: url(img3-3.jpeg);
+            transition: all 0.3s;
+        }
+        .cc .p2-c:hover {
+            transform: scale(1.5);
+        }
+
+
+        .dd .p2-c {
+            background-image: url(img2-4.jpeg);
+            background-size: cover;
+            transition: all 0.3s;
+        }
+
+        .dd .p2-c:hover {
+            transform: scale(1.5);
+        }
+
+        .ee .p2-c {
+            background-image: url(img5-5.jpeg);
+            transition: all 0.3s;
+        }
+        .ee .p2-c:hover {
+            transform: scale(1.5);
+        }
+
+
+        .p1-c,
+        .p2-c {
+            background-size: cover;
+        }
+
+        .ff .p2 {
+            background-image: url(img1.jpeg);
+        }
+
+        .gg .p2 {
+            background-image: url(picles.jpeg);
+            transform: rotateY(180deg);
+        }
+
+        .p2 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 20px;
+            width: 100%;
+            height: 240px;
+
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            font-weight: lighter;
+        }
+
+        .p9 {
+            background-image: url(fenomenal.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 350px;
+            height: 250px;
+            border-radius: 25px;
+        }
+
+        .p6 {
+            background-image: url(picante.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 350px;
+            height: 250px;
+            border-radius: 25px;
+        }
+
+        .p7 {
+            background-image: url(combo.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 350px;
+            height: 250px;
+            border-radius: 25px;
+        }
+
+        .centraliza {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            JUSTIFY-CONTENT: CENTER;
+            TEXT-ALIGN: START;
+            ALIGN-ITEMS: START !IMPORTANT;
+            display: flex;
+        }
+
+        .gente {
+            font-size: 3em;
+            color: yellow;
+            text-shadow: 4px 3px 7px #4f4949;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg amarelo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.svg" style="width: 40px;" alt="Logo" />
+                <strong style="width: 40px;">Estação do Lanche</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Ínicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contatos">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://wa.me/5518997206209">
+                            <button class="btn btn-success"
+                                style="border-radius: 20px; background-color: #0bd42b; border-color: #0bd42b;">
+                                <img src="whatsapp.svg" style="width: 20px;" alt="">
+                                Faça seu Pedido
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------------------------------------main------------------------------------------------------------->
+    <div class="container-fluid text-center">
+        <div class="row amarela" id="inicio">
+            <div class="col-sm-12 p1 d-flex justify-content-center align-items-center">
+                <div>
+                    <h1>Uma delícia de sabor</h1>
+                    <p class="">Para os clientes mais exigentes</p>
+                    <a href="#produtos">
+                        <button
+                        style=" background-color: red;color: #FFF ; border: none; border-radius: 10px; Cursor: pointer; height: 40px; width: 250px;">
+                        VER MAIS <strong>PRODUTOS</strong></button>
+                    </a>
+                </div>
+                <!------------------------------------------------------------------------------------------------------------------->
+
+            </div>
+            <div class="col-sm-6 pt-4 pb-4 ff">
+                <div class="p2">
+                    <div>
+                        <h2>Hamburguer</h2>
+                        <p>do tamanhho da sua fome</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pt-4 pb-4 gg ">
+                <div class="p2">
+                    <div style="transform: rotateY(180deg)">
+                        <h2>Combos</h2>
+                        <p>para toda família</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="row branco pt-5 pb-5">
+            <div class="col-sm-3 hh" id="produtos">
+                <p class="p9" style="width: 100%;"></p>
+            </div>
+            <div class="col-sm-6 ii centraliza">
+                <div class="p8">
+                    <strong>
+                        <h3 style="color:#DE0A0A"> Smash burguer fenomenal</h3>
+                    </strong>
+                    <p style="font-weight: lighter;">Pão de gergilin, hamburguer 180g e muito queijo cheddar.</p>
+                    <strong style="color: #000;">
+                        <p>R$ 18,90</p>
+                    </strong>
+                </div>
+            </div>
+            <div class="col-sm-3 jj d-flex align-items-center">
+                <p class="p10">
+                    <a href="https://wa.me/5518997206209">
+                        <button
+                        style="background-color: red;color: yellow ; border: none; border-radius: 10px; Cursor: pointer; height: 40px; width: 250px;">
+                        <strong>EU QUERO!</strong></button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="row bege pt-5 pb-5">
+            <div class="col-sm-3 kk ">
+                <p class="p6" style="width: 100%;"></p>
+            </div>
+            <div class="col-sm-6 ll centraliza">
+                <p class="p8">
+                    <strong>
+                        <h3 style="color:#DE0A0A"> Extremo picante burguer</h3>
+                    </strong>
+                <p style="font-weight: lighter;">Pão de gergilin, hamburguer 180g e muito queijo cheddar, salada e molho
+                    especiel de pimenta.</p>
+                <strong style="color: #000;">
+                    <p>R$ 24,90</p>
+                </strong>
+                </p>
+            </div>
+            <div class="col-sm-3 mm d-flex align-items-center">
+                <p class="p10">
+                    <a href="https://wa.me/5518997206209">
+                        <button
+                            style="background-color: red;color: yellow ; border: none; border-radius: 10px; Cursor: pointer; height: 40px; width: 250px;">
+                        <strong>EU QUERO!</strong></button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="row cinza pt-5 pb-5">
+            <div class="col-sm-3 nn">
+                <p class="p7" style="width: 100%;"></p>
+            </div>
+            <div class="col-sm-6 oo centraliza">
+                <p class="p8">
+                    <strong>
+                        <h3 style="color:#DE0A0A"> Combo picles</h3>
+                    </strong>
+                <p style="font-weight: lighter;">Pão de gergilin, hamburguer 180g e salada com picles. Acompanha Batata
+                    de 250g e Refrigerante 350 ml. </p>
+                <strong style="color: #000;">
+                    <p>R$ 39,90</p>
+                </strong>
+                </p>
+            </div>
+            <div class="col-sm-3 pp d-flex align-items-center">
+                <p class="p10">
+                    <a href="https://wa.me/5518997206209">
+                        <button
+                            style="background-color: red;color: yellow ; border: none; border-radius: 10px; Cursor: pointer; height: 40px; width: 250px;">
+                        <strong>EU QUERO!</strong></button>
+                    </a>
+                <p>
+            </div>
+        </div>
+        <div class="row branco2 pt-5 pb-5" id="contatos">
+            <div class="col-sm-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14869.511993923481!2d-50.3378723!3d-21.296075199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949614c408c27d11%3A0xcc7f847c4664814a!2sServi%C3%A7o%20Social%20Ind%C3%BAstria%20SESI!5e0!3m2!1spt-BR!2sbr!4v1695389107242!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-sm-7" style="text-align: left;">
+                <p class="p3">
+                <h1 style="color: #DE0A0A;">
+                    FALE CONOSCO
+                    <hr class="linha" />
+                </h1>
+                <form class="row g-3" style="border-color: black; width: 80;">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Informe seu nome</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Jose Antônio">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Telefone para contato</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: (18) 99696-7878">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Sua mensagem</label>
+                        <textarea name="" id="" class="form-control" cols="30" rows="5"
+                            placeholder="Informe aqui sua mensagem..."></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary"
+                            style="background-color:#DE0A0A; border-color:#DE0A0A; color: yellow; border-radius:25px; height:40px; width: 120px;">ENVIAR</button>
+                    </div>
+                </form>
+                </p>
+            </div>
+        </div>
+
+        <div class="row vermelin pt-3">
+            <div class="col-sm-5" style="
+            color: yellow;
+            text-shadow: 4px 3px 7px #4f4949;
+            font-weight: bold;display: flex;
+    align-items: center;
+    justify-content: center;">
+
+                <div class="p4">
+                    <div>
+                        <h1 class="gente">
+                            SEGUE A <br> G E N T E 
+                        </h1>
+                    </div>
+                    <div>
+                        <a href="https://instagram.com">
+                            <img src="instagram.svg" style="width: 40px;" alt="Logo" />
+                            <strong style="width: 40px; color: #FFF;">estacaodolanche</strong>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://youtube.com">
+                            <img src="youtube.svg" style="width: 40px;" alt="Logo" />
+                            <strong style="width: 40px; color: #FFF;">estacaodolanchetv</strong>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://tiktok.com">
+                            <img src="tiktok.svg" style="width: 40px;" alt="Logo" />
+                            <strong style="width: 40px; color: #FFF;">estacaodolanche</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7">
+                <div class="row cinzin g-3">
+                    <div class="col-sm-6 aa">
+                        <p class="p1-c"></p>
+                    </div>
+                    <div class="col-sm-6 bb">
+                        <p class="p1-c"></p>
+                    </div>
+                    <div class="col-sm-4 cc">
+                        <p class="p2-c"></p>
+                    </div>
+                    <div class="col-sm-4 dd">
+                        <p class="p2-c"></p>
+                    </div>
+                    <div class="col-sm-4 ee">
+                        <p class="p2-c"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!---------------------------------footer--------------------------------------------->
+            <div class="row amarelo pt-4 pb-2 text-center">
+                <div class="col-sm-4">
+                    <p>
+                        <img src="logo.svg" style="width: 40px;" alt="Logo" />
+                        <strong style="width: 40px;">Estação do Lanche</strong>
+                    </p>
+                </div>
+                <div class="col-sm-8 footer">
+                    <p>
+                        (18) 99720-6209 / (18) 93500-7007
+                        <br> Rua lorem ipsum N° 123, Centro birigui / SP
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------------------->
+</body>
+
+</html>
